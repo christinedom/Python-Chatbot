@@ -1,0 +1,52 @@
+# Chatbot Application
+
+This is a Flask web application that provides a chatbot interface powered by Google's GenerativeAI Gemini-Pro model. The frontend HTML file creates the chatbot UI, while the backend Python script handles the server-side logic, API integration, and response generation.
+
+## Prerequisites
+
+Before running this application, make sure you have the following installed:
+
+- Python 3.x
+- Flask
+- google-generativeai
+
+You can install the required Python packages using pip:
+
+```
+pip install flask google-generativeai python-dotenv
+```
+
+## Setup
+
+1. Clone the repository or download the project files.
+2. Create a `.env` file in the project directory and add your Google GenerativeAI API key:
+
+```
+API_KEY=your_api_key_here
+```
+
+3. Replace `your_api_key_here` with your actual API key.
+
+## Running the Application
+
+1. Open a terminal or command prompt and navigate to the project directory.
+2. Run the Flask application:
+
+```
+python app.py
+```
+
+3. The application will start running on `http://localhost:5000/`.
+4. Open your web browser and visit `http://localhost:5000/` to access the chatbot interface.
+
+## Usage
+
+1. Enter your message in the input field and click the "Send" button or press Enter.
+2. The chatbot will process your input using the Gemini-Pro model and display the generated response in the chat history.
+3. Continue the conversation by entering new messages.
+
+## Files
+
+- `app.py`: The Flask backend script that handles the server, API integration, and response generation.
+- `templates/index.html`: The HTML file for the chatbot user interface.
+- `.env`: A file to store your Google GenerativeAI API key (not included in the repository).
